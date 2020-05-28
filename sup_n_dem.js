@@ -71,7 +71,7 @@ function shiftSnD(){
     else{
         orginal("D1*", "S1*")
     }
-    if (demand_shift != "default"){
+    if (demand_shift != "default"&&demand_type!="default"){
         orginal("D1*", "S1*");
         if (demand_type == "inc"){
             count_demand = 20;
