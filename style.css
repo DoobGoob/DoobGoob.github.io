@@ -1,0 +1,32 @@
+body{
+    background-color: #f4f4f4;
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    margin:0;
+    margin: auto;
+}
+
+.my_row{
+    border: 3px solid red;
+    height: 300px;
+}
+.my_col{
+    border: 3px solid blue;
+}
+
+
+/*
+Extra Small (xs) devices (portait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width:768px){...}
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) {...}
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px){...}
+
+Extra (xl) devcies (large desktops, 1200px and up)
+@media (min-width: 1200px){...}
+*/
