@@ -37,25 +37,40 @@
     <!-- Graph-->
     <div class = "container">
         <!-- Row 1 Header-->
-        <div class = "row justify-content-center">
+        <div class = "row justify-content-center my_row">
             <h1>Supply and Demand</h1>
         </div>
         <!-- Row 2 Graph and Options-->
-        <div class = "row">
-            <div class = "col">
-                </html><canvas id="myCanvas" width="165" height="165" style="border:1px solid black"></canvas>
+        <div class = "row justify-content-center my_row">
+            <div class = "col my_col">
+                <center>
+                    </html><canvas id="myCanvas" width="165" height="165" style="border:1px solid black"></canvas>
+                </center>
             </div>
-            <div class = "col">
+        </div>
+        <div class = "row my_row">
+            <div class = "col my_col">
                 <label for = "ddSupply"> Supply Shifts:</label>
                 <select id = "ddSupply">
                     <option value = "default">-- Select an Option --</option>
-                    <option value = "default">Default</option>
                     <option value = "option">Price of Resources</option>
                     <option value = "option">Number of Producers</option>
                     <option value = "option">Price of Related Goods</option>
                     <option value = "option">Income</option>
                     <option value = "option">Expectations</option>
                 </select>
+                <br>
+                <label for = "ddDemand"> Demand Shift:</label>
+                <select id = "ddDemand">
+                    <option value = "default">-- Select an Option --</option>
+                    <option value = "option">Tastes/Preferences</option>
+                    <option value = "option">Number of Consumers</option>
+                    <option value = "option">Price of Related Goods</option>
+                    <option value = "option">Income</option>
+                    <option value = "option">Expectations</option>
+                </select>
+            </div>
+            <div class = "col my_col">
                 <label for = "ddSupplyType">Type of Shift</label>
                 <select id = "ddSupplyType">
                     <option value="default">-- Select an Option --</option>
@@ -63,17 +78,6 @@
                     <option value="dec">Negative Shift</option>
                 </select>
                 <br>
-                <label for = "ddDemand"> Demand Shift:</label>
-                <select id = "ddDemand">
-                    <option value = "default">-- Select an Option --</option>
-                    <option value = "default">Default</option>
-                    <option value = "option">Tastes/Preferences</option>
-                    <option value = "option">Number of Consumers</option>
-                    <option value = "option">Price of Related Goods</option>
-                    <option value = "option">Income</option>
-                    <option value = "option">Expectations</option>
-                </select>
-                
                 <label for = "ddDemandType">Type of Shift</label>
                 <select id = "ddDemandType">
                     <option value="default">-- Select an Option --</option>
@@ -81,6 +85,10 @@
                     <option value="dec">Negative Shift</option>
                 </select>
                 <br>
+            </div>
+        </div>
+        <div class = "row align-items-center">
+            <div class = "col-3">
                 <input type="button" id="subButton" value="Submit" onclick="shiftSnD();" />
             </div>
         </div>
